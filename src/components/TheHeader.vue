@@ -7,30 +7,47 @@ export default {
 <template>
     <header>
         <nav>
-            <div class="Logo">
 
+            <div>
+                <img src="../../public/img/dc-logo.png" alt="Logo-dC">
+
+
+                <ul class="navbar-links">
+                    <li><a class="nav-link" href="#">Character</a></li>
+                    <li><a class="nav-link" href="#">Comics</a></li>
+                    <li><a class="nav-link" href="#">Movies</a></li>
+                    <li><a class="nav-link" href="#">Tv</a></li>
+                    <li><a class="nav-link" href="#">Games</a></li>
+                    <li><a class="nav-link" href="#">Collectibles</a></li>
+                    <li><a class="nav-link" href="#">Videos</a></li>
+                    <li><a class="nav-link" href="#">Fans</a></li>
+                    <li><a class="nav-link" href="#">News</a></li>
+                    <li><a class="nav-link" href="#">Shop</a></li>
+                </ul>
             </div>
 
-            <ul class="navbar-links">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">Prodotti</a></li>
-                <li><a class="nav-link" href="#">Chi siamo</a></li>
-                <li><a class="nav-link" href="#">Contatti</a></li>
-            </ul>
         </nav>
     </header>
 </template>
 
 <style scoped>
+header {
+    background-color: white;
+}
+
+.logo {
+    text-align: start;
+}
+
 .navbar-links {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
     list-style: none;
 }
 
 .nav-link {
-    padding: .5rem 1rem;
+    padding: 1rem 1.5rem;
     color: black;
     text-decoration: none;
     transition: color .3s ease;
@@ -38,7 +55,7 @@ export default {
 }
 
 .nav-link:hover {
-    color: green;
+    color: blue;
     text-decoration: underline;
 }
 </style>
