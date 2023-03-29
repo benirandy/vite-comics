@@ -7,21 +7,17 @@ export default {
     TheHeader,
     TheFooter,
   },
-
   data() { },
-  method: {},
+  methods: {},
 };
-
 </script>
 
-
 <template>
-  <TheHeader></TheHeader>
-
+  <header>Header</header>
   <main>Main</main>
-
-  <TheFooter></TheFooter>
+  <footer>Footer</footer>
 </template>
 
+<script>
 
-<style ></style> 
+</script>
