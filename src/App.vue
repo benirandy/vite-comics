@@ -1,6 +1,6 @@
 <script>
-import TheHeader from "./components/TheHeader.vue"
-import TheFooter from "./components/TheFooter.vue"
+import TheHeader from "./components/TheHeader.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   components: {
@@ -13,11 +13,13 @@ export default {
 </script>
 
 <template>
-  <header>Header</header>
-  <main>Main</main>
-  <footer>Footer</footer>
+  <TheHeader></TheHeader>
+
+  <main> Contents go here</main>
+
+  <TheFooter></TheFooter>
 </template>
 
-<script>
-
-</script>
+<style lang="scss">
+@use "./styles/general.scss";
+</style>

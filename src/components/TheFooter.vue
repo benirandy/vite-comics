@@ -1,17 +1,33 @@
 <script>
-
 export default {
     name: "TheFooter"
 }
-</script >
 </script>
 
 <template>
     <footer>
-        ©{{ new Date().getFullYear() }} | All right riserve
+       <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+       </nav>
     </footer>
 </template>
 
-<script>
+<style scoped>
+footer {
+    display: flex;
+    min-height: 70vh;
+    border-top: 2px solid grey;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/footer-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
-</script>
+</style>
