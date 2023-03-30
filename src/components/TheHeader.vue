@@ -62,7 +62,7 @@ export default {
 
 header {
   background-color: $color-navbar-bg;
-  min-height: 20vh;
+  min-height: 10vh;
 }
 
 .brand {
