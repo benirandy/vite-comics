@@ -58,7 +58,7 @@ export default {
 
 <style scoped lang="scss">
 @use "../styles/partials/variables" as *;
-
+@use "../styles/partials/mixin";
 
 header {
   background-color: $color-navbar-bg;
@@ -72,9 +72,7 @@ header {
 }
 
 .navbar-links {
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  @include mixin.d-flex-center;
   list-style: none;
 
   .nav-link {

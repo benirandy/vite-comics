@@ -71,11 +71,10 @@ export default {
         </div>
     </footer>
     <div>
-
         <ul class="footer-img">
             <div class="btns">
-                <button class="favorite styled" type="button">
-                    SIGN-UP NOW
+                <button class="my-btn" type="button">
+                    <h4> SIGN-UP NOW</h4>
                 </button>
             </div>
             <h4>FOLLOW US</h4>
@@ -89,22 +88,23 @@ export default {
     </div>
 </template>
 
-<style scoped>
+
+<style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixin";
+
 footer {
     display: flex;
     min-height: 70vh;
     border-top: 2px solid grey;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/footer-bg.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .footer-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixin.d-flex-center;
     list-style: none;
     background-color: rgb(32, 92, 175);
     min-height: 15vh;
@@ -172,7 +172,6 @@ img {
     align-items: center;
     list-style: none;
     background-color: rgb(32, 92, 175);
-    
 
 }
 </style>

@@ -1,4 +1,6 @@
+@use "bootstrap";
 @use "./partials/variables";
+@use "./partials/buttons";
 
 * {
     padding: 0;
@@ -13,13 +15,16 @@ body {
 
 main {
     min-height: 10vh;
-
+    background-color: black;
+    color: aliceblue;
     h1 {
         font-size: 40px;
         color: variables.$color-primary;
     }
 }
-main {
-    background-color: black;
-    color: aliceblue;
+
+footer {
+    background-image: url(/img/footer-bg.jpg);
 }
+
+
