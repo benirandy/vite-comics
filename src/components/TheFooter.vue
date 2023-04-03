@@ -1,7 +1,44 @@
 <script>
 export default {
-    name: "TheFooter"
-}
+    name: "TheFooter",
+    data() {
+        return {
+            navLinks: [
+                {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }, {
+                    immagini: "",
+                    text: "",
+                }
+            ]
+        }
+    }
+};
 </script>
 
 <template>
@@ -88,7 +125,6 @@ export default {
     </div>
 </template>
 
-
 <style scoped lang="scss">
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/mixin";
@@ -99,6 +135,7 @@ footer {
     border-top: 2px solid grey;
     justify-content: center;
     align-items: center;
+    background-image: url(/img/footer-bg.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
